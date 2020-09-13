@@ -12,18 +12,19 @@ module.exports = gql`
     firstName: String!
     lastName: String!
     emailId: String!
-    skills: String!
+    skills: [String!]!
     rate: Int!
     city: String!
     State: String!
     zip: Int!
   }
+
   input Employee {
     _id: ID
     firstName: String!
     lastName: String!
     emailId: String!
-    skills: String!
+    skills: [String!]!
     rate: Int!
     city: String!
     State: String!
