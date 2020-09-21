@@ -5,7 +5,6 @@ module.exports = {
     allEmployees: async () => {
       try {
         const allEmployees = await models.find();
-        // console.log(TimeSheets);
         return allEmployees;
       } catch (err) {
         return {
